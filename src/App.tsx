@@ -12,8 +12,7 @@ export default function App(): React.JSX.Element {
       <main className="hero">
         <h1 className="headline">Building the future of Voice AI.</h1>
         <p className="subcopy">
-          <a href="https://cal.com/belridge-labs" className="talk-link">Message us</a>{" "}
-          to explore how Voice AI can transform your business.
+          <a href="https://cal.com/belridge-labs" className="talk-link">Contact us</a>{" "}
         </p>
       </main>
 
