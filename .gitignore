@@ -37,5 +37,4 @@ coverage/
 
 # Lint/Tool caches
 .eslintcache
-
-
+.vercel

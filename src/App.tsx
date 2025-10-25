@@ -9,10 +9,10 @@ export default function App(): React.JSX.Element {
       </header>
 
       <main className="hero">
-        <h1 className="headline">Building the future of AI in education.</h1>
+        <h1 className="headline">Building the future of Voice AI.</h1>
         <p className="subcopy">
-          <a href="https://cal.com/belridge-labs" className="talk-link">Let’s talk</a>{" "}
-          about how AI can transform your classroom experience today.
+          <a href="https://cal.com/belridge-labs" className="talk-link">Message us</a>{" "}
+          to explore how Voice AI can transform your business.
         </p>
       </main>
 
