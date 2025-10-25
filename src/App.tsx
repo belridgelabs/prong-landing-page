@@ -1,10 +1,11 @@
 import React from "react";
+import prongLogo from "../assets/prong-logo.svg";
 
 export default function App(): React.JSX.Element {
   return (
     <div className="page-frame">
       <header className="top-bar">
-        <img src="/assets/prong logo.svg" alt="Prong logo" className="logo" />
+        <img src={prongLogo} alt="Prong logo" className="logo" />
         <span className="brand">prong</span>
       </header>
 
