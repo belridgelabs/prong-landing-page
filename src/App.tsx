@@ -15,6 +15,13 @@ export default function App(): React.JSX.Element {
         <h2 className="subheadline">
         Prong analyzes live calls and refines your system prompts + tool use in real time.
         </h2>
+        {/* <h1 className="headline">Prong helps Voice AI startups blueprint and refine their agents</h1>
+        <h2 className="subheadline">
+        Pre-development, our AI analyzes call history to give you all the context you need.
+        </h2>
+        <h2 className="subheadline">
+        Post-deployment, our AI listens to every call you take in production and improves your agents in real time.
+        </h2> */}
         <p className="subcopy">
           <Link to="/product" className="talk-link">Product</Link>
           <span className="link-spacer"></span>

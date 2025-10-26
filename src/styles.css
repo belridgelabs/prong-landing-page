@@ -3,12 +3,11 @@
 html, body, #root { height: 100%; }
 body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-system, Segoe UI, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: #111; }
 
-/* Full page frame matching screenshot with thick black border */
 .page-frame {
   position: relative;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; /* ensure no scrollbars appear */
+  overflow: hidden;
 }
 
 .top-bar {
@@ -18,7 +17,7 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: Roboto, Arial, sans-serif; /* per spec */
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 700;
   font-size: 28px;
 }
@@ -36,7 +35,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* width: min(900px, 82vw); */
 }
 
 .headline {
@@ -114,15 +112,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   width: 90%;
 }
 
-.product-headline {
-  margin: 40px 0;
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(24px, 3vw, 32px);
-  font-weight: 400;
-  color: #1a1a1a;
-  text-align: left;
-}
-
 .product-content {
   margin: 40px 0;
   text-align: left;
@@ -164,39 +153,11 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   color: #828282;
 }
 
-.product-cta {
-  margin: 48px 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.cta-button {
-  padding: 12px 24px;
-  background: #1a1a1a;
-  color: white;
-  text-decoration: none;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 4px;
-  transition: background-color 0.2s;
-}
-
-.cta-button:hover {
-  background: #333;
-}
-
-.back-link {
-  color: #1a1a1a;
-  text-decoration: underline;
-  font-family: "Times New Roman", Arial, sans-serif;
-  font-size: 16px;
-}
-
 @media (max-width: 768px) {
+  .hero {
+    max-width: 800px;
+    width: 90%;
+  }
   .headline {
     white-space: normal;
     font-size: clamp(20px, 5vw, 28px);
@@ -204,6 +165,21 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   .subheadline {
     white-space: normal;
     font-size: clamp(14px, 4vw, 20px);
+  }
+  .feature-title {
+    font-size: clamp(20px, 4vw, 24px);
+  }
+  .feature-description {
+    font-size: clamp(12px, 1.4vw, 16px);
+  }
+  .coming-soon-feature-title {
+    font-size: clamp(16px, 5vw, 20px);
+  }
+  .coming-soon-feature-description {
+    font-size: clamp(11px, 1.2vw, 14px);
+  }
+  .subcopy{
+    font-size: clamp(11px, 1.2vw, 14px);
   }
 }
 
@@ -218,6 +194,19 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
     white-space: normal;
     font-size: clamp(12px, 4vw, 16px);
   }
+  .feature-title {
+    font-size: clamp(16px, 5vw, 20px);
+  }
+  .feature-description {
+    font-size: clamp(11px, 1.2vw, 14px);
+  }
+  .coming-soon-feature-title {
+    font-size: clamp(16px, 5vw, 20px);
+  }
+  .coming-soon-feature-description {
+    font-size: clamp(11px, 1.2vw, 14px);
+  }
+  .subcopy{
+    font-size: clamp(11px, 1.2vw, 14px);
+  }
 }
-
-
