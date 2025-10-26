@@ -70,6 +70,10 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   width: 24px;
 }
 
+.vertical-spacer {
+  height: 4px;
+}
+
 .footer {
   position: absolute;
   bottom: 20px;

@@ -22,6 +22,7 @@ export default function App(): React.JSX.Element {
         <h2 className="subheadline">
         Post-deployment, our AI listens to every call you take in production and improves your agents in real time.
         </h2> */}
+        <div className="vertical-spacer"></div>
         <p className="subcopy">
           <Link to="/product" className="talk-link">Product</Link>
           <span className="link-spacer"></span>

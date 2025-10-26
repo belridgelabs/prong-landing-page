@@ -42,6 +42,8 @@ export default function Product(): React.JSX.Element {
           </section>
         </div>
 
+        <div className="vertical-spacer"></div>
+
         <p className="subcopy">
           <Link to="/" className="talk-link">← Back to Home</Link>
           <span className="link-spacer"></span>
