@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import prongLogo from "../assets/prong-logo.svg";
 
 export default function App(): React.JSX.Element {
@@ -10,13 +11,21 @@ export default function App(): React.JSX.Element {
       </header>
 
       <main className="hero">
-        <h1 className="headline">Building the future of Voice AI.</h1>
+        <h1 className="headline">Build self-improving Voice Agents</h1>
+        <h2 className="subheadline">
+        Prong analyzes live calls and refines your system prompts + tool use in real time.
+        </h2>
         <p className="subcopy">
-          <a href="https://cal.com/belridge-labs" className="talk-link">Contact us</a>{" "}
+          <Link to="/product" className="talk-link">Product</Link>
+          <span className="link-spacer"></span>
+          <a href="https://cal.com/belridge-labs" className="talk-link">Book a call</a>
         </p>
       </main>
 
-      <footer className="footer">© 2025 Belridge Labs</footer>
+      <footer className="footer">
+        <span className="copyright">© 2025 Belridge Labs</span>
+        <a href="mailto:founders@belridge-labs.com" className="contact-link">Contact</a>
+      </footer>
     </div>
   );
 }
