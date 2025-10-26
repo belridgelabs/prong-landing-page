@@ -54,10 +54,10 @@ export default function App(): React.JSX.Element {
 
       <footer className="footer">
         <span className="copyright">© 2025 Belridge Labs</span>
-        <div className="backed-by">
+        {/* <div className="backed-by">
           <span className="backed-by-text">Backed by</span>
           <img src={teloraLogo} alt="Telora logo" className="telora-logo" />
-        </div>
+        </div> */}
       </footer>
     </div>
   );
