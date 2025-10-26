@@ -27,14 +27,14 @@ export default function App(): React.JSX.Element {
       <main className="product-hero">        
         <div className="product-content">
           <section className="feature-section">
-            <h2 className="feature-title">Build agents that improve themselves</h2>
+            <h2 className="feature-title">Build voice agents that improve themselves</h2>
             <p className="feature-description">
               Prong monitors all production calls, evaluates them, and refines your system prompts + tool use in real time.
             </p>
           </section>
 
           <section className="feature-section">
-            <h2 className="coming-soon-feature-title">Blueprint and generate your agent in seconds</h2>
+            <h2 className="coming-soon-feature-title">Blueprint and generate your voice agent in seconds</h2>
             <p className="coming-soon-feature-description">
               (Coming Soon) Upload a customer’s call recordings, knowledge base, and tools. 
               Prong listens to every conversation, maps out every scenario, and generates a production-ready agent.
