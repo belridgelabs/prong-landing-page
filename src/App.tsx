@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import prongLogo from "../assets/prong-logo.svg";
+import teloraLogo from "../assets/telora.jpeg";
 
 export default function App(): React.JSX.Element {
   return (
@@ -10,21 +11,42 @@ export default function App(): React.JSX.Element {
         <span className="brand">prong</span>
       </header>
 
-      <main className="hero">
+      {/* <main className="hero">
         <h1 className="headline">Build self-improving Voice Agents</h1>
         <h2 className="subheadline">
         Prong analyzes live calls and refines your system prompts + tool use in real time.
         </h2>
-        {/* <h1 className="headline">Prong helps Voice AI startups blueprint and refine their agents</h1>
-        <h2 className="subheadline">
-        Pre-development, our AI analyzes call history to give you all the context you need.
-        </h2>
-        <h2 className="subheadline">
-        Post-deployment, our AI listens to every call you take in production and improves your agents in real time.
-        </h2> */}
         <div className="vertical-spacer"></div>
         <p className="subcopy">
           <Link to="/product" className="talk-link">Product</Link>
+          <span className="link-spacer"></span>
+          <a href="https://cal.com/belridge-labs" className="talk-link">Book a call</a>
+        </p>
+      </main> */}
+
+      <main className="product-hero">        
+        <div className="product-content">
+          <section className="feature-section">
+            <h2 className="feature-title">Build agents that improve themselves</h2>
+            <p className="feature-description">
+              Prong monitors all production calls, evaluates them, and refines your system prompts + tool use in real time.
+            </p>
+          </section>
+
+          <section className="feature-section">
+            <h2 className="coming-soon-feature-title">Blueprint and generate your agent in seconds</h2>
+            <p className="coming-soon-feature-description">
+              (Coming Soon) Upload a customer’s call recordings, knowledge base, and tools. 
+              Prong listens to every conversation, maps out every scenario, and generates a production-ready agent.
+            </p>
+          </section>
+        </div>
+
+        <div className="vertical-spacer"></div>
+
+        <p className="subcopy">
+          {/* <Link to="/" className="talk-link">← Back to Home</Link> */}
+          <a href="mailto:founders@belridge-labs.com" className="talk-link">Email us</a>
           <span className="link-spacer"></span>
           <a href="https://cal.com/belridge-labs" className="talk-link">Book a call</a>
         </p>
@@ -32,7 +54,10 @@ export default function App(): React.JSX.Element {
 
       <footer className="footer">
         <span className="copyright">© 2025 Belridge Labs</span>
-        <a href="mailto:founders@belridge-labs.com" className="contact-link">Contact</a>
+        <div className="backed-by">
+          <span className="backed-by-text">Backed by</span>
+          <img src={teloraLogo} alt="Telora logo" className="telora-logo" />
+        </div>
       </footer>
     </div>
   );

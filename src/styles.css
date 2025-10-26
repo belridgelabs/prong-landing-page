@@ -58,6 +58,7 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   font-size: clamp(14px, 1.4vw, 18px);
   line-height: 1.6;
   color: #1a1a1a;
+  text-align: left;
 }
 
 .talk-link {
@@ -92,9 +93,19 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   color: #1a1a1a;
 }
 
-.contact-link {
+.backed-by {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.backed-by-text {
   color: #1a1a1a;
-  text-decoration: underline;
+}
+
+.telora-logo {
+  height: 16px;
+  width: auto;
 }
 
 /* Product Page Styles */
@@ -185,6 +196,15 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   .subcopy{
     font-size: clamp(11px, 1.2vw, 14px);
   }
+  .telora-logo {
+    height: 14px;
+  }
+  .backed-by-text {
+    font-size: 10px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -212,5 +232,14 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   }
   .subcopy{
     font-size: clamp(11px, 1.2vw, 14px);
+  }
+  .telora-logo {
+    height: 12px;
+  }
+  .backed-by-text {
+    font-size: 10px;
+  }
+  .copyright {
+    font-size: 10px;
   }
 }
