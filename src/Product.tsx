@@ -35,7 +35,7 @@ export default function Product(): React.JSX.Element {
           <section className="feature-section">
             <h2 className="coming-soon-feature-title">Blueprint your agent before you build it</h2>
             <p className="coming-soon-feature-description">
-              (Coming Soon) Upload customers' human agent call recordings and your knowledge base. 
+              (Coming Soon) Upload customers' human agent call recordings and knowledge base. 
               Prong maps every conversation path, tool call, 
               sentiment trend and success metric to give you a clear foundation for agent design.
             </p>
