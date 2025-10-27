@@ -37,21 +37,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   text-align: center;
 }
 
-.headline {
-  margin: 0 0 18px 0;
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(28px, 4.2vw, 46px);
-  font-weight: 400;
-  white-space: nowrap;
-}
-
-.subheadline {
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(16px, 2.5vw, 24px);
-  font-weight: 200;
-  white-space: nowrap;
-}
-
 .subcopy {
   margin: 0;
   font-family: "Times New Roman", Arial, sans-serif;
@@ -93,15 +78,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   color: #1a1a1a;
 }
 
-/* Product Page Styles */
-.logo-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: inherit;
-}
-
 .product-hero {
   position: absolute;
   top: 50%;
@@ -117,20 +93,56 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   text-align: left;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(23, 144, 73, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(23, 144, 73, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(23, 144, 73, 0);
+  }
+}
+
 .live-now-pill {
-  border: 2px solid #47c76d;
-  color: #676767;
+  background-color: #E9F9EE;
+  border: 2px solid #179049;
+  color: #179049;
   font-size: 0.775rem;
   font-weight: 500;
   padding: 4px 10px;
   border-radius: 999px; /* pill shape */
   white-space: nowrap;
   font-family: Roboto, Arial, sans-serif;
+  /* animation: pulse 4s ease-in-out infinite; */
+  animation: glow 2s ease-out infinite;
+  animation-delay: 1s;
 }
 
 .coming-soon-pill {
-  border: 2px solid #949494;
-  color: #949494;
+  background-color: #F3F4F6;
+  border: 2px solid #6B7280;
+  color: #6B7280;
   font-size: 0.775rem;
   font-weight: 500;
   padding: 4px 10px;
@@ -164,7 +176,7 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   color: #1a1a1a;
 }
 
-.title-sep { margin-left: 8px; margin-right: 8px; }
+.title-sep { margin-left: 12px; margin-right: 12px; }
 
 .feature-description {
   margin: 0;
@@ -178,14 +190,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   .hero {
     max-width: 800px;
     width: 90%;
-  }
-  .headline {
-    white-space: normal;
-    font-size: clamp(20px, 5vw, 28px);
-  }
-  .subheadline {
-    white-space: normal;
-    font-size: clamp(14px, 4vw, 20px);
   }
   .feature-section {
     margin: 0 0 32px 0;
@@ -217,14 +221,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   .top-bar { left: 20px; top: 18px; font-size: 22px; }
   .footer { left: 20px; bottom: 18px; }
   .logo { height: 26px; }
-  .headline { 
-    font-size: clamp(18px, 6vw, 24px);
-    line-height: 1.2;
-  }
-  .subheadline {
-    white-space: normal;
-    font-size: clamp(12px, 4vw, 16px);
-  }
   .feature-title {
     font-size: clamp(16px, 5vw, 20px);
   }

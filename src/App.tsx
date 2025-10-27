@@ -20,6 +20,7 @@ export default function App(): React.JSX.Element {
                 <span className="title-sep" aria-hidden="true">|</span>
               </h2>
               <span className="live-now-pill pill-inline">Live</span>
+              {/* <span className="coming-soon-pill pill-inline">Beta</span> */}
             </div>
             <p className="feature-description">
               Prong monitors all production calls, evaluates them, and refines your system prompts + tool use in real time.
@@ -32,7 +33,8 @@ export default function App(): React.JSX.Element {
                 Blueprint and generate your voice agent in seconds
                 <span className="title-sep" aria-hidden="true">|</span>
               </h2>
-              <span className="coming-soon-pill pill-inline">Coming Soon</span>
+              {/* <span className="live-now-pill pill-inline">Live</span> */}
+              <span className="coming-soon-pill pill-inline">Beta</span>
             </div>
             <p className="feature-description">
               Upload a customer’s call recordings, knowledge base, and tools. 
