@@ -15,7 +15,7 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   top: 24px;
   left: 28px;
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 12px;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 700;
@@ -77,13 +77,13 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
 
 .footer {
   position: absolute;
+  left: 28px;
   bottom: 20px;
-  left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 28px;
+  gap: 12px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
   color: #1a1a1a;
@@ -91,12 +91,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
 
 .copyright {
   color: #1a1a1a;
-}
-
-.backed-by {
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 /* Product Page Styles */
@@ -206,12 +200,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   .subcopy{
     font-size: clamp(11px, 1.2vw, 14px);
   }
-  .telora-logo {
-    height: 14px;
-  }
-  .backed-by-text {
-    font-size: 10px;
-  }
   .copyright {
     font-size: 10px;
   }
@@ -227,6 +215,7 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
 
 @media (max-width: 680px) {
   .top-bar { left: 20px; top: 18px; font-size: 22px; }
+  .footer { left: 20px; bottom: 18px; }
   .logo { height: 26px; }
   .headline { 
     font-size: clamp(18px, 6vw, 24px);
@@ -244,12 +233,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   }
   .subcopy{
     font-size: clamp(11px, 1.2vw, 14px);
-  }
-  .telora-logo {
-    height: 12px;
-  }
-  .backed-by-text {
-    font-size: 10px;
   }
   .copyright {
     font-size: 10px;
