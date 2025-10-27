@@ -11,35 +11,36 @@ export default function App(): React.JSX.Element {
         <span className="brand">prong</span>
       </header>
 
-      {/* <main className="hero">
-        <h1 className="headline">Build self-improving Voice Agents</h1>
-        <h2 className="subheadline">
-        Prong analyzes live calls and refines your system prompts + tool use in real time.
-        </h2>
-        <div className="vertical-spacer"></div>
-        <p className="subcopy">
-          <Link to="/product" className="talk-link">Product</Link>
-          <span className="link-spacer"></span>
-          <a href="https://cal.com/belridge-labs" className="talk-link">Book a call</a>
-        </p>
-      </main> */}
-
       <main className="product-hero">        
         <div className="product-content">
           <section className="feature-section">
-            <h2 className="feature-title">Build voice agents that improve themselves</h2>
+            <div className="feature-title-row">
+              <h2 className="feature-title">
+                Build voice agents that improve themselves
+                <span className="title-sep" aria-hidden="true">|</span>
+              </h2>
+              <span className="live-now-pill pill-inline">Live</span>
+            </div>
             <p className="feature-description">
               Prong monitors all production calls, evaluates them, and refines your system prompts + tool use in real time.
             </p>
           </section>
 
           <section className="feature-section">
-            <h2 className="coming-soon-feature-title">Blueprint and generate your voice agent in seconds</h2>
-            <p className="coming-soon-feature-description">
-              (Coming Soon) Upload a customer’s call recordings, knowledge base, and tools. 
+            <div className="feature-title-row">
+              <h2 className="feature-title">
+                Blueprint and generate your voice agent in seconds
+                <span className="title-sep" aria-hidden="true">|</span>
+              </h2>
+              <span className="coming-soon-pill pill-inline">Coming Soon</span>
+            </div>
+            <p className="feature-description">
+              Upload a customer’s call recordings, knowledge base, and tools. 
               Prong listens to every conversation, maps out every scenario, and generates a production-ready agent.
             </p>
           </section>
+
+
         </div>
 
         <div className="vertical-spacer"></div>

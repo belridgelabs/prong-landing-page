@@ -99,15 +99,6 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   gap: 8px;
 }
 
-.backed-by-text {
-  color: #1a1a1a;
-}
-
-.telora-logo {
-  height: 16px;
-  width: auto;
-}
-
 /* Product Page Styles */
 .logo-link {
   display: flex;
@@ -132,17 +123,54 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   text-align: left;
 }
 
+.live-now-pill {
+  border: 2px solid #47c76d;
+  color: #676767;
+  font-size: 0.775rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px; /* pill shape */
+  white-space: nowrap;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.coming-soon-pill {
+  border: 2px solid #949494;
+  color: #949494;
+  font-size: 0.775rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px; /* pill shape */
+  white-space: nowrap;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.pill-inline {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.feature-title-row {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
 .feature-section {
-  margin: 32px 0;
+  margin: 0 0 36px 0;
 }
 
 .feature-title {
-  margin: 0 0 12px 0;
+  margin: 16px 0 16px 0;
   font-family: "Times New Roman", Times, serif;
   font-size: clamp(28px, 3vw, 26px);
   font-weight: 400;
   color: #1a1a1a;
 }
+
+.title-sep { margin-left: 8px; margin-right: 8px; }
 
 .feature-description {
   margin: 0;
@@ -152,23 +180,7 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   color: #1a1a1a;
 }
 
-.coming-soon-feature-title {
-  margin: 0 0 12px 0;
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(28px, 3vw, 26px);
-  font-weight: 400;
-  color: #828282;
-}
-
-.coming-soon-feature-description {
-  margin: 0;
-  font-family: "Times New Roman", Arial, sans-serif;
-  font-size: clamp(14px, 1.6vw, 18px);
-  line-height: 1.6;
-  color: #828282;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .hero {
     max-width: 800px;
     width: 90%;
@@ -181,17 +193,15 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
     white-space: normal;
     font-size: clamp(14px, 4vw, 20px);
   }
+  .feature-section {
+    margin: 0 0 32px 0;
+  }
   .feature-title {
     font-size: clamp(20px, 4vw, 24px);
+    margin: 10px 0 10px 0;
   }
   .feature-description {
-    font-size: clamp(12px, 1.4vw, 16px);
-  }
-  .coming-soon-feature-title {
-    font-size: clamp(16px, 5vw, 20px);
-  }
-  .coming-soon-feature-description {
-    font-size: clamp(11px, 1.2vw, 14px);
+    font-size: clamp(13px, 1.4vw, 16px);
   }
   .subcopy{
     font-size: clamp(11px, 1.2vw, 14px);
@@ -205,9 +215,17 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   .copyright {
     font-size: 10px;
   }
+  .live-now-pill {
+  font-size: 0.775rem;
+  padding: 3px 8px;
+  }
+  .coming-soon-pill {
+    font-size: 0.775rem;
+    padding: 3px 8px;
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .top-bar { left: 20px; top: 18px; font-size: 22px; }
   .logo { height: 26px; }
   .headline { 
@@ -222,13 +240,7 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
     font-size: clamp(16px, 5vw, 20px);
   }
   .feature-description {
-    font-size: clamp(11px, 1.2vw, 14px);
-  }
-  .coming-soon-feature-title {
-    font-size: clamp(16px, 5vw, 20px);
-  }
-  .coming-soon-feature-description {
-    font-size: clamp(11px, 1.2vw, 14px);
+    font-size: clamp(12px, 1.2vw, 14px);
   }
   .subcopy{
     font-size: clamp(11px, 1.2vw, 14px);
@@ -241,5 +253,25 @@ body { margin: 0; background: #ffffff; font-family: Roboto, system-ui, -apple-sy
   }
   .copyright {
     font-size: 10px;
+  }
+  .live-now-pill {
+    font-size: 0.575rem;
+    padding: 2px 7px;
+  }
+  .coming-soon-pill {
+    font-size: 0.575rem;
+    padding: 2px 7px;
+  }
+  .feature-title-row {
+    display: flex;
+    flex-direction: column-reverse; /* pill above title */
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .title-sep {
+    display: none; /* hide the " |" on small screens */
+  }
+  .pill-inline {
+    margin-left: 0;
   }
 }
